@@ -90,6 +90,9 @@ public class ImageLoader {
      */
     public Bitmap loadBitmap(int photoId){
         try {
+
+
+
             Bitmap bitmap=BitmapUtils.loadBitmap(context, photoId);
             //把下载到的bitmap存到内存缓存cache中
             SoftReference<Bitmap> ref = new SoftReference<Bitmap>(bitmap);
