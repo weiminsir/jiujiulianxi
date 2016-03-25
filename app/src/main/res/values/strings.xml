@@ -31,4 +31,5 @@
     <string name="title_activity_guide">GuideActivity</string>
     <string name="title_activity_drawee_img_test">DraweeImgTestActivity</string>
     <string name="title_activity_envent">EnventActivity</string>
+    <string name="title_activity_git">GitActivity</string>
 </resources>

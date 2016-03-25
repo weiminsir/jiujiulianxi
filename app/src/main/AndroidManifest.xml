@@ -128,7 +128,6 @@
         <activity
             android:name=".demo.fresco.DraweeImgTestActivity"
             android:label="@string/title_activity_drawee_img_test" >
-
         </activity>
         <activity
             android:name=".demo.enentbus.EnventActivity"
@@ -138,6 +137,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".demo.annotation.GitActivity"
+            android:label="@string/title_activity_git" >
         </activity>
     </application>
 
