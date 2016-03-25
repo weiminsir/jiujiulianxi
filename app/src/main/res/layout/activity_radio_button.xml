@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="weiminsir.jiujiulianxi.jiujie.dayOne.RadioButtonActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#11000000"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/rb_tab_menu_deal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_tab_deal_selected"
+            android:gravity="center|center"
+            android:text="团购" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_menu_nearby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_tab_nearby_selected"
+            android:gravity="center|center"
+            android:text="附近" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_menu_my"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_tab_my_selected"
+            android:gravity="center|center"
+            android:text="我的" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_menu_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_tab_more_selected"
+            android:gravity="center|center"
+            android:text="更多" />
+    </RadioGroup>
+
+</RelativeLayout>

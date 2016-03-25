@@ -1,0 +1,2 @@
+//  1. File musicDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC);
+//   内部目录  公共目录 外部目录 区别于联系

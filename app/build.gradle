@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "weiminsir.jiujiulianxi"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //retrofit
+    //okhttp
+    //Photoview
+    compile('com.github.chrisbanes.photoview:library:1.2.3') {
+        exclude module: 'support-v4'
+    }
+    //rxandroid
+    //RoundedImageView
+    //autoscrollviewpager
+    compile('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
+    //picasso
+    // view pager indicator
+    //emojicon textview
+    compile('com.rockerhieu.emojicon:library:1.2') {
+        exclude module: 'support-v4'
+    }
+    //datetimepicker
+    //expandableTextView
+    //umeng analytics
+    //bottom sheet
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'io.reactivex:rxandroid:0.25.0'
+    compile 'com.makeramen:roundedimageview:2.1.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
+    compile 'com.github.flavienlaurent.datetimepicker:library:0.0.2'
+    compile 'com.ms-square:expandableTextView:0.1.4'
+    compile 'com.cocosw:bottomsheet:1.+@aar'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'org.xutils:xutils:3.0'
+    compile 'com.facebook.fresco:fresco:0.8.1'
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    compile 'de.greenrobot:eventbus:2.4.0'
+
+}
